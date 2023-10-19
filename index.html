@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Button</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function checkChoice() {
+            var userChoice = document.querySelector('input[name="userChoice"]:checked').value;
+            if (userChoice === "yes") {
+                alert("I am glad that you are ok!");
+            } else if (userChoice === "no") {
+                alert("Awe, take a rest ok");
+            } else {
+                alert("Please select an option");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Are You Ok?</h1>
+    <p>Yes, I am! </p>
+    <input type="radio" id="yes" name="userChoice" value="yes">
+    <p>No, I am not</p>
+    <input type="radio" id="no" name="userChoice" value="no">
+    <br>
+    <button onclick="checkChoice()">Submit</button><br />
+   <h1>File Path</h1>
+    <img src="/image/Sticker_ly.jpg " alt="Meowmazing">
+</body>
+</html>
+
+
+
+
